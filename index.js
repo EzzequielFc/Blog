@@ -21,12 +21,12 @@ app.use(session({
     secret: "qualquercoisa", cookie: { maxAge: 30000000 }
 }))
 
-// Static
-app.use(express.static('public'));
+    // Static
+    app.use(express.static('public'));
 
-//Body parser
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+    //Body parser
+    app.use(bodyParser.urlencoded({extended: false}));
+    app.use(bodyParser.json());
 
 // Database
 
